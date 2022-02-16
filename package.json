@@ -1,0 +1,37 @@
+{
+  "name": "aws-lambda-kinesis-aggregated-event-filtering",
+  "version": "0.1.0",
+  "bin": {
+    "aws-lambda-fanout": "bin/app.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.10",
+    "@types/node": "10.17.27",
+    "aws-cdk": "2.1.0",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.2.0",
+    "ts-node": "^9.0.0",
+    "ts-sinon": "^2.0.2",
+    "typescript": "~3.9.7"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-apigatewayv2-alpha": "^2.2.0-alpha.0",
+    "@aws-cdk/aws-apigatewayv2-integrations-alpha": "^2.2.0-alpha.0",
+    "@aws-sdk/client-dynamodb": "^3.44.0",
+    "@aws-sdk/client-kinesis": "^3.44.0",
+    "@types/aws-lambda": "^8.10.86",
+    "aws-cdk-lib": "2.2.0",
+    "aws-kinesis-agg": "^4.2.4",
+    "aws-lambda": "^1.0.7",
+    "aws-xray-sdk": "^3.3.4",
+    "cdk-nag": "^2.4.54",
+    "constructs": "^10.0.0",
+    "source-map-support": "^0.5.16"
+  }
+}

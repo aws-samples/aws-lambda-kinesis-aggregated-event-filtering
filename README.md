@@ -1,17 +1,22 @@
-## My Project
+# aws-lambda-kinesis-aggregated-event-filtering
 
-TODO: Fill this README out!
+CDK project that sets up the following serverless architecture to test out Lambda based Kinesis consumers and [Lambda event filtering](https://docs.aws.amazon.com/lambda/latest/dg/invocation-eventfiltering.html) with [aggregated records](https://docs.aws.amazon.com/streams/latest/dev/kinesis-kpl-concepts.html#kinesis-kpl-concepts-aggretation).
 
-Be sure to:
+![](./images/Architecture.drawio.png)
 
-* Change the title in this README
-* Edit your repository description on GitHub
+Also creates a dashboard to monitor called "AwsLambdaFanout" to monitor that messages get all the way through the pipeline
 
-## Security
+![](./images/Dashboard.png)
 
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+## Testing
 
-## License
+Included is a [JMeter test script](./Test.jmx). 
 
-This project is licensed under the Apache-2.0 License.
+To run this script you have to deploy the cdk project and then replace the api endpoint in the test script.
+
+## Commands
+* `npm install`     install dependencies
+* `npm run build`   compile typescript to js
+* `cdk deploy -c account=<your_account> -c region=<your_region>` deploy to your aws account
+
 
