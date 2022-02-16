@@ -40,7 +40,7 @@ mvn clean package
 Then run the producer to put some data into a stream called ``<Name of the out kinesis stream>`` in ``<region you deployed to>`` for ``100 seconds``:
 
 ```
-mvn exec:java -Dexec.mainClass="com.amazonaws.services.kinesis.producer.sample.SampleProducer" -Dexec.args="<Name of the out kinesis stream> <region you deployed to> 100"
+mvn exec:java -Dexec.mainClass="sample.SampleProducer" -Dexec.args="<Name of the out kinesis stream> <region you deployed to> 100"
 ```
 
 
