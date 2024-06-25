@@ -32,6 +32,10 @@
     "aws-kinesis-agg": "^4.2.2",
     "aws-lambda": "^1.0.7",
     "aws-xray-sdk": "^3.9.0",
-    "source-map-support": "^0.5.21"
+    "source-map-support": "^0.5.21",
+    "protobufjs": "7.2.5"
+  },
+  "overrides": {
+    "protobufjs":  "7.2.5"
   }
 }
